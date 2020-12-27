@@ -22,6 +22,20 @@ class App extends Component {
               return <Redirect to="/Trending" />;
             }}
           />
+          <Route
+            exact
+            path="/SMovies"
+            render={() => {
+              return <Redirect to="/Trending" />;
+            }}
+          />
+          <Route
+            exact
+            path="/SMovies/"
+            render={() => {
+              return <Redirect to="/Trending" />;
+            }}
+          />
           <Route exact path="/Trending" component={Trending} />
           <Route exact path="/Movies" component={Movies} />
           <Route exact path="/TVSeries" component={TVSeries} />
