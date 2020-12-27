@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/SMovies/static/js/main.77b5476b.chunk.js",
+    "main.js.map": "/SMovies/static/js/main.77b5476b.chunk.js.map",
+    "runtime-main.js": "/SMovies/static/js/runtime-main.6a8bd71f.js",
+    "runtime-main.js.map": "/SMovies/static/js/runtime-main.6a8bd71f.js.map",
+    "static/css/2.6b00acf2.chunk.css": "/SMovies/static/css/2.6b00acf2.chunk.css",
+    "static/js/2.6c0af00e.chunk.js": "/SMovies/static/js/2.6c0af00e.chunk.js",
+    "static/js/2.6c0af00e.chunk.js.map": "/SMovies/static/js/2.6c0af00e.chunk.js.map",
+    "index.html": "/SMovies/index.html",
+    "precache-manifest.145f54f4e245a5815f3e8672d8647499.js": "/SMovies/precache-manifest.145f54f4e245a5815f3e8672d8647499.js",
+    "service-worker.js": "/SMovies/service-worker.js",
+    "static/css/2.6b00acf2.chunk.css.map": "/SMovies/static/css/2.6b00acf2.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a8bd71f.js",
+    "static/css/2.6b00acf2.chunk.css",
+    "static/js/2.6c0af00e.chunk.js",
+    "static/js/main.77b5476b.chunk.js"
+  ]
+}
