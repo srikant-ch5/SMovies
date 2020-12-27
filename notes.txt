@@ -1,0 +1,110 @@
+https://medium.com/@levifuller/how-to-build-a-scalable-movie-browser-app-using-react-and-redux-in-visual-studio-code-dea8bfb3eabe
+
+1. we will have a state 
+{
+    mv :
+    movies : {
+
+    },
+    movieModal : {
+
+    }
+}
+
+2. action creator 
+const openMovieModal = (movieId) => {
+    return {
+        type: 'openMovieModal,
+        movieId
+    }
+}
+
+3. const movieReducer = (state = {isOpen:fals},action) => {
+    switch(action.type){
+
+    }
+    def
+}
+
+4. Hook to store
+const store = createStore(rootReducer)
+
+5. trigger action from component 
+store.dispatch(openMovieModal(2323))
+
+6. store passes the action to each reducer along with the state and action
+movieModalReducer(store.getState().movieBroswer.movieModal, action) -> handled by combineReducer
+
+7. After this when state is updated any component connected to state will re render
+
+Configure Redux
+For production we organize state tree object in module/feature
+
+movie-browser 
+- A conatiner will be aware of Redux (apps state /data) while components recieve this data in form of props froma a parent 
+- A container can be tied to a page route and maybe aware of Router
+- A container has many child components
+
+Create Async Action and reducer Helper
+Common practise in Redux is to seperate and asynchronous request into 
+START SUCCESS ERROR
+
+For that three seperate action creator should be created 
+
+What all can change action type action req getTopmovies(page) searchMovies(page searchItem) req params (page , searchterm)
+
+
+//Reducer helper functions 
+
+
+Functions 
+- createReducer - https://redux-toolkit.js.org/api/createreducer/
+- createAction - https://redux-toolkit.js.org/api/createAction
+- createAsyncActionCreator
+- createAsycReducer 
+
+
+Async function 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+
+Create Service functions 
+ - we pass the urls and make the urls using the base Url and the full Url using the params 
+ - these service functions are async functions 
+ - these functions will fetch using the url passed
+
+Create Action creators - action creators are considered as keys 
+ - Use createAsyncActionCreator for creating actions which takes action Type , request function - the service function which was created 
+    and also take requestParams -  page , ids to search that can be included in the api call
+
+    keys 
+    getTopMovies = createAsyncActionCreator
+    searchMovies 
+    getMovieDetails 
+
+Above actions can be dispatched from components but 
+ - TELL Store what its new state should be when these actions are dispatched 
+ - Solution :
+    Create some reducers to handle each of the action type
+
+
+Create movie-card.component.js 
+        loader.component.js
+        movie-list.component.js
+
+Next step dispatch getTopMovies and then pass them to movieList Component
+he Movie DB API (TMDB) returns relative paths for the the poster/backdrop picture URLs, so we’ll need to transform them into absolute paths for our components to render correctly.
+
+* ComponentDidMount lifecycle methods will run one time after the component is mounted to the DOM, buyt only after allof its 
+children have called componentDidMount()
+These methods enable us to do things like:
+
+    Trigger actions when specific props change
+    Prevent a component from triggering the same action twice by comparing the old and new props
+    Prevent a component from re-rendering when it’s not supposed to
+    And much, much more!
+    
+https://medium.com/@julianajlk/grids-rows-and-columns-in-react-bootstrap-c36a703c3c45
+
+
+
+    
